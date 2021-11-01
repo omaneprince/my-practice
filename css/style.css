@@ -2,34 +2,84 @@ html {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
+*::before,
+::after {
+  box-sizing: inherit;
+}
 body {
   text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 header,
 span,
-ul,
+nav,
 li {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie {
+  margin-right: 10rem;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  margin-right: 3rem;
 }
 li {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 .cart {
   margin: auto;
+  margin-right: 4rem;
 }
-
+.zero {
+  width: 20px;
+  height: 20px;
+  background: #01b901;
+  align-content: center;
+  justify-content: center;
+  border-radius: 20px;
+}
 .bottom {
   display: flex;
 }
 main {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  max-width: 1200px;
 }
 .grad {
   width: 200px;
   height: 300px;
   background-image: url(/images/grad.jpg);
   background-position: center;
+  margin-left: 50rem;
+  border-radius: 100px;
+}
+.middle {
+  display: flex;
+  margin-top: 5rem;
+}
+.text {
+  width: 200px;
+  font-size: 2rem;
+  text-align: right;
+}
+.bigger {
+  width: 400px;
+  border: #000 solid 2px;
+  border-radius: 30px;
+}
+.smaller {
+  width: 98%;
+  height: 80%;
+  border: #000 solid 2px;
+  border-radius: 30px;
+  display: flex;
+  margin-right: 50px;
 }
 .first-bottom {
   width: calc(100vw / 3);

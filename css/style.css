@@ -22,6 +22,11 @@ li {
 }
 .movie {
   margin-right: 10rem;
+  animation-name: move;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 a {
   text-decoration: none;
@@ -60,15 +65,29 @@ main {
   background-position: center;
   margin-left: 50rem;
   border-radius: 100px;
+  visibility: 0.2;
 }
 .middle {
   display: flex;
   margin-top: 5rem;
+  background-image: url(/images/do\ something\ great.jpg);
+  background-position: center;
+  opacity: 1;
+  background-attachment: fixed;
 }
 .text {
+  display: flex;
   width: 200px;
-  font-size: 2rem;
-  text-align: right;
+  font-size: 3rem;
+  color: #0f021b;
+  text-shadow: #dba8d9 1px 1px 10px;
+  text-shadow: #dba8d9 1px 1px 10px;
+  text-shadow: #dba8d9 1px 1px 10px;
+  text-shadow: #dba8d9 1px 1px 10px;
+  text-shadow: #dba8d9 1px 1px 10px;
+  text-shadow: #dba8d9 1px 1px 10px;
+  text-shadow: #dba8d9 1px 1px 10px;
+  text-shadow: #dba8d9 1px 1px 10px;
 }
 .bigger {
   width: 400px;
@@ -95,20 +114,27 @@ main {
 .first-bottom {
   width: calc(100vw / 3);
   height: 400px;
-  background-image: url(/images/logo\ p.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .second-bottom {
   width: calc(100vw / 3);
   height: 400px;
-  background-image: url(/images/linkedIn\ 500.jpg);
-  background-position: center;
 }
 .third-bottom {
   width: calc(100vw / 3);
   height: 400px;
-  background-image: url(/images/logo\ 2.png);
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+@keyframes move {
+  0% {
+    transform: rotateX(100px);
+  }
+  50% {
+    transform: rotateX(100px);
+  }
+  75% {
+    transform: rotateX(100px);
+  }
+  100% {
+    transform: rotateX(100px);
+  }
 }

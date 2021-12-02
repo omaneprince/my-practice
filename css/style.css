@@ -25,11 +25,12 @@ li {
   font-size: 2rem;
 }
 .hub {
-  animation: text 3s 1;
+  animation: text 3s 1 ease-in-out;
 }
 
 a {
   text-decoration: none;
+  color: #000;
 }
 nav {
   margin-right: 3rem;
@@ -44,10 +45,15 @@ li {
 .zero {
   width: 20px;
   height: 20px;
-  background: #01b901;
+  background: #a50aec;
   align-content: center;
   justify-content: center;
   border-radius: 20px;
+}
+#o {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bottom {
   display: flex;
@@ -126,15 +132,15 @@ main {
 
 @keyframes text {
   0% {
-    transform: rotateX(20%);
+    transform: rotate(20%);
   }
   50% {
-    transform: rotateX(20%);
+    transform: rotate(20%);
   }
   75% {
-    transform: rotateX(40%);
+    transform: rotate(40%);
   }
   100% {
-    transform: rotateX(20%);
+    transform: rotate(20%);
   }
 }

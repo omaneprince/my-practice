@@ -22,12 +22,12 @@ li {
 }
 .movie {
   margin-right: 10rem;
-  animation-name: move;
-  animation-timing-function: ease;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
+  font-size: 2rem;
 }
+.hub {
+  animation: text 3s 1;
+}
+
 a {
   text-decoration: none;
 }
@@ -124,17 +124,17 @@ main {
   height: 400px;
 }
 
-@keyframes move {
+@keyframes text {
   0% {
-    transform: rotateX(100px);
+    transform: rotateX(20%);
   }
   50% {
-    transform: rotateX(100px);
+    transform: rotateX(20%);
   }
   75% {
-    transform: rotateX(100px);
+    transform: rotateX(40%);
   }
   100% {
-    transform: rotateX(100px);
+    transform: rotateX(20%);
   }
 }

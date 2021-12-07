@@ -93,12 +93,9 @@ main {
   text-shadow: #dba8d9 1px 1px 10px;
 }
 .dont {
-  transition: transform 5s ease-in-out;
+  animation: text 4s ease-in-out forwards infinite alternate;
 }
 .text:hover .dont {
-  transform: translateY(50deg);
-  transform: scaleY(2);
-  transform: rotateY(360deg);
 }
 .bigger {
   width: 400px;
@@ -137,10 +134,10 @@ main {
 
 @keyframes text {
   0% {
-    transform: rotate(20%);
+    transform: rotateY(20%);
   }
   50% {
-    transform: rotate(20%);
+    transform: translateX(20%);
   }
   75% {
     transform: rotate(40%);

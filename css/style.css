@@ -95,6 +95,15 @@ main {
 .dont {
   animation: text 4s ease-in-out forwards infinite alternate;
 }
+.not {
+  animation: text 4s ease-in-out forwards infinite alternate 1s;
+}
+.sleep {
+  animation: text 4s ease-in-out forwards infinite alternate 2s;
+}
+.tonit {
+  animation: text 4s ease-in-out forwards infinite alternate 3s;
+}
 .text:hover .dont {
 }
 .bigger {
@@ -134,13 +143,13 @@ main {
 
 @keyframes text {
   0% {
-    transform: rotateY(20%);
+    transform: rotateZ(360deg);
   }
   50% {
-    transform: translateX(20%);
+    transform: translateY(98%);
   }
   75% {
-    transform: rotate(40%);
+    transform: rotateZ(180deg);
   }
   100% {
     transform: rotate(20%);
